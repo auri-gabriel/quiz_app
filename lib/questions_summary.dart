@@ -28,12 +28,17 @@ class QuestionsSummary extends StatelessWidget {
                       // Circle for question index
                       CircleAvatar(
                         backgroundColor:
-                            isCorrect ? Colors.greenAccent : Colors.redAccent,
+                            isCorrect
+                                ? const Color.fromARGB(255, 8, 110, 17)
+                                : const Color.fromARGB(255, 170, 34, 34),
                         radius: 16,
                         child: Text(
                           ((data['question_index'] as int) + 1).toString(),
                           style: GoogleFonts.lato(
-                            color: Colors.black,
+                            color:
+                                isCorrect
+                                    ? const Color.fromARGB(255, 213, 255, 216)
+                                    : const Color.fromARGB(255, 255, 221, 221),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -63,7 +68,7 @@ class QuestionsSummary extends StatelessWidget {
                             Text(
                               "Correct answer: ${data['correct_answer']}",
                               style: GoogleFonts.inter(
-                                color: const Color.fromARGB(255, 136, 255, 132),
+                                color: const Color.fromARGB(255, 16, 255, 8),
                                 fontSize: 12,
                               ),
                             ),
