@@ -20,7 +20,7 @@ A simple and fun Quiz App built with **Flutter**, featuring questions about the 
 To run the app locally:
 
 ```bash
-git clone https://github.com/yourusername/quiz_app.git
+git clone https://github.com/auri-gabriel/quiz_app.git
 cd quiz_app
 flutter pub get
 flutter run
